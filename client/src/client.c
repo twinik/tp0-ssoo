@@ -3,7 +3,6 @@
 int main(void)
 {
 	/*---------------------------------------------------PARTE 2-------------------------------------------------------------*/
-
 	int conexion;
 	char *ip;
 	char *puerto;
@@ -13,7 +12,6 @@ int main(void)
 	t_config *config;
 
 	/* ---------------- LOGGING ---------------- */
-
 	logger = iniciar_logger();
 
 	// Usando el logger creado previamente
@@ -21,7 +19,6 @@ int main(void)
 	log_info(logger, "Hola! Soy un log");
 
 	/* ---------------- ARCHIVOS DE CONFIGURACION ---------------- */
-
 	config = iniciar_config();
 
 	// Usando el config creado previamente, leemos los valores del config y los
@@ -34,7 +31,6 @@ int main(void)
 	log_info(logger, "IP: %s - PUERTO: %s - CLAVE: %s \n", ip, puerto, valor);
 
 	/* ---------------- LEER DE CONSOLA ---------------- */
-
 	//leer_consola(logger);
 
 	/*---------------------------------------------------PARTE 3-------------------------------------------------------------*/
